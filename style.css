@@ -1,0 +1,205 @@
+body {
+    background-image: url('images/food-bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /* user-select: none; */
+}
+
+.navbar {
+    display: flex;
+    background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.445), rgb(0, 0, 0));
+    margin: 0;
+    height: 100px;
+}
+
+.links {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 21px;
+}
+
+.link-items {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 0px;
+}
+
+.link-items:hover {
+    border-bottom: 3px solid;
+}
+
+.brand {
+    padding: auto auto;
+    display: flex;
+    margin-left: 26px;
+}
+
+.brand img {
+    width: 10%;
+    margin: auto 5px;
+}
+
+.brand a {
+    text-decoration: none;
+    color: rgb(216, 199, 203);
+    font-size: 43px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto 16px;
+}
+
+.intro {
+    background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.445), rgb(0, 0, 0));
+    padding-left: 50px;
+    padding-bottom: 3%;
+    display: flex;
+}
+
+.intro img {
+    width: 30%;
+}
+
+.intro-box1 {
+    width: 60%;
+    display: inline-block;
+    padding-top: 5%;
+}
+
+.intro-box1 h1 {
+    color: azure;
+    font-size: 5rem;
+    margin: 10px auto;
+}
+
+.intro-box1 p {
+    color: rgba(255, 255, 255, 0.616);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro button {
+    color: aliceblue;
+    font-size: 16px;
+    background-color: black;
+    padding: 10px 25px;
+    margin-right: 2%;
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px rgb(170, 170, 170);
+}
+
+.intro button:active {
+    background-color: rgb(27, 27, 27);
+    position: relative;
+    top: 3px;
+    box-shadow: 0 0 0;
+}
+
+.about {
+    padding: 1% 10% 7% 15%;
+    background: rgba(90, 18, 112, 0.747);
+    text-align: center;
+}
+
+.about-content1,
+.about-content2 {
+    display: flex;
+    margin: auto;
+
+}
+
+.about h2 {
+    color: rgb(157, 186, 231);
+    font-size: 4rem;
+}
+
+.about img {
+    width: 20%;
+    border-radius: 120px;
+}
+
+.about p {
+    color: aliceblue;
+    margin: auto 5%;
+    width: 60%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.hrline {
+    height: 4px;
+    width: 40%;
+    margin: 3% auto;
+    background: linear-gradient(90deg, transparent, rgb(233, 217, 217), transparent);
+}
+
+hr {
+    border-color: whitesmoke;
+    border-width: 10px;
+    width: 10%;
+    border-style: none;
+    border-top-style: dotted;
+}
+
+.products{
+    background: rgb(240, 124, 124);
+    display: flex;
+    margin: auto;
+}
+
+.boxes{
+    margin: 5% 1%;
+    background-color: rgb(235, 214, 214);
+    padding: 2%;
+    height: 350px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.boxes img{
+    margin: auto;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.products h2{
+    display: inline;
+}
+
+.add-cart-btn{
+    position: relative;
+    left: 25%;
+    color: aliceblue;
+    background-color: crimson;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-cart-btn:active{
+    background-color: rgb(184, 4, 40);
+}
+
+.partners{
+    background-color: rgb(235, 214, 214);
+    display: flex;
+    text-align: center;
+    padding: 3%;
+}
+
+.partners img{
+    margin: auto 1%;
+    height: 30%;
+    width: 20%;
+}
