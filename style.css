@@ -1,9 +1,11 @@
 body {
-    background-image: url('images/food-bg2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 0;
-    /* user-select: none; */
+    user-select: none;
+}
+
+main{
+    background-image: url('images/food-bg2.jpg');
+    background-size: cover;
 }
 
 .navbar {
@@ -192,14 +194,101 @@ hr {
 }
 
 .partners{
-    background-color: rgb(235, 214, 214);
+    /* background-color: rgb(235, 214, 214); */
+    background-color: #2C3639;
     display: flex;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
 }
 
 .partners img{
     margin: auto 1%;
     height: 30%;
-    width: 20%;
+    width: 18%;
+}
+
+.reviews{
+    /* background-color: antiquewhite; */
+    background-color: #2F8F9D;
+    padding: 3%;
+    display: flex;
+}
+
+.reviews h3{
+    color: rgba(29, 37, 43, 0.61);
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.reviews p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(206, 215, 223);
+    font-style: italic;
+}
+
+.review-box{
+    margin: 1%;
+    /* background-color: rgba(25, 105, 79, 0.589); */
+    background-color: #3BACB6;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.contact-link{
+    background: linear-gradient(90deg, rgb(99, 49, 165), rgb(161, 4, 96));
+    padding: 6% 5%;
+    text-align: center;
+}
+
+.contact-link h1{
+    font-size: 45px;
+    color: rgb(223, 140, 188);
+    margin: 0;
+}
+
+.contact-link p{
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 4%;
+}
+
+.contact-link button{
+    color: aliceblue;
+    font-size: 20px;
+    background-color: crimson;
+    padding: 1% 3%;
+    border: 3px solid whitesmoke;
+    border-radius: 120px;
+}
+
+.contact-link button:active{
+    background-color: rgb(182, 14, 48);
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(3, 16, 59);
+    padding: 5%;
+}
+
+footer a{
+    text-decoration: none;
+    margin: 1%;
+    padding: 5px 2px;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a:hover{
+    color: azure;
+}
+
+footer p{
+    color: rgba(240, 248, 255, 0.808);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3% auto 0 auto;
 }
