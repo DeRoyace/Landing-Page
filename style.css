@@ -68,13 +68,15 @@ main{
 .intro-box1 {
     width: 60%;
     display: inline-block;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .intro-box1 h1 {
     color: azure;
     font-size: 5rem;
-    margin: 10px auto;
+    padding: 0;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 .intro-box1 p {
@@ -89,6 +91,7 @@ main{
     font-size: 16px;
     background-color: black;
     padding: 10px 25px;
+    margin-top: 3%;
     margin-right: 2%;
     border-radius: 7px;
     border: 0;
@@ -291,4 +294,119 @@ footer p{
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 3% auto 0 auto;
+}
+
+
+/*********************************************************************************************
+        Contact.html file Styling CSS
+**********************************************************************************************/
+.contact{
+    text-align: center;
+    background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.445), rgb(160, 17, 17));
+}
+
+.contact h1{
+    color: rgba(240, 248, 255, 0.733);
+    font-size: 4rem;
+    padding: 5%;
+    /* padding-bottom: 2.5%; */
+    margin: 0;
+}
+
+.contact-form{
+    background: rgba(23, 25, 116, 0.603);
+    /* width: 70%; */
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.contact-form input, textarea{
+    color: rgb(236, 236, 236);
+    background: rgba(0, 0, 0, 0.884);
+    padding: 1%;
+    font-size: 1.2rem;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.726);
+    text-decoration: none;
+    user-select: none;
+    margin: 0.7%;
+    width: 30%;
+    outline: none; /*removes outline on focuse/ while typing*/
+}
+
+/* :focus::placeholder{
+    font-size: 16px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+} */
+
+.contact input[type="submit"]{
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    width: 32%;
+    /* width: 15%; */
+    background: linear-gradient(rgb(36, 35, 35), rgb(0,0,0));
+}
+
+.contact input[type="submit"]:active{
+    background: rgb(0,0,0);
+}
+
+.contact-form div{
+    position: relative;
+    /* width: 400px; */
+    margin: auto;
+}
+
+.contact-form label{
+    position: absolute;
+    top: 1%;
+    right: 34%;
+    margin: 1%;
+    color: rgba(18, 231, 160, 0.699);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hours{
+    background: rgba(172, 40, 40, 0.76);
+    padding: 10%;
+}
+
+.hours h1{
+    color: rgba(240, 248, 255, 0.74);
+    font-size: 4.5rem;
+    margin: 0 auto 7% auto;
+}
+
+.hours table{
+    width: 80%;
+}
+
+.hours th{
+    color: rgb(235, 199, 210);
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 10%;
+    padding-bottom: 3%;
+}
+
+.hours td{
+    color: rgba(240, 248, 255, 0.795);
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.days{
+    padding-left: 20%;
+}
+
+.timings{
+    padding-left: 14%;
 }
