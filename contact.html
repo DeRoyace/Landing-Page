@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Red Chillies - Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <nav class="navbar">
@@ -18,39 +20,102 @@
                 <a href="index.html" class="link-items" id="link1">Home</a>
                 <a href="#about" class="link-items" id="link2">About</a>
                 <a href="#menu" class="link-items" id="link3">Menu</a>
-                <a href="contact.html" class="link-items" id="link4" style="border-bottom: 3px solid whitesmoke;">Contact</a>
+                <a href="contact.html" class="link-items" id="link4"
+                    style="border-bottom: 3px solid whitesmoke;">Contact</a>
             </ul>
         </nav>
 
         <div class="contact">
-            <h1>Contact</h1>
-            <form action="mailto: creative.roy2003@gmail.com" method="post" enctype="text/plain">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="your full name">
-                </div>
-                <div>
-                    <label for="phone">Phone</label>
-                    <input type="tel">
-                </div>
-                <div>
-                    <label for="email-id">Email-id</label>
-                    <input type="email" name="email" id="">
-                </div>
-                <div>
-                    <label for="address">Address</label>
-                    <textarea name="address" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+            <div class="contact-form">
+                <h1>Contact</h1>
+
+                <form action="mailto: creative.roy2003@gmail.com" method="post" enctype="text/plain">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="Customer-Name" placeholder="your full name">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="PhoneNo." placeholder="10-digit mobile number">
+                    </div>
+                    <div>
+                        <label for="email-id">Email-id</label>
+                        <input type="email" name="email" id="" placeholder="xyz@example.com">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea name="address" id="" cols="30" rows="3"
+                            placeholder="enter you house address"></textarea>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="5" placeholder="enter your query"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
-        
+
+        <div class="hours">
+            <h1>Hours & Timings</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours Open</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="days">Monday</td>
+                        <td class="timings">10:00 am to 09:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Tuesday</td>
+                        <td class="timings">10:00 am to 09:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Wednesday</td>
+                        <td class="timings">10:00 am to 09:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Thursday</td>
+                        <td class="timings">10:00 am to 09:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Friday</td>
+                        <td class="timings">10:00 am to 09:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Saturday</td>
+                        <td class="timings">10:00 am to 08:30 pm</td>
+                    </tr>
+                    <tr>
+                        <td class="days">Sunday</td>
+                        <td class="timings">12:00 pm to 10:30 pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </main>
+
+    <footer>
+        <div class="soclinks">
+            <a href="" class="twitter">Twitter</a>
+            <a href="" class="insta">Instagram</a>
+            <a href="" class="fb">Facebook</a>
+            <a href="" class="youtube">YouTube</a>
+            <a href="" class="telegram">Telegram</a>
+        </div>
+        <p class="copyright">
+            ©️ Copyright Roys Codes 2022
+        </p>
+    </footer>
+
+    <script src="brain.js"></script>
 </body>
+
 </html>
