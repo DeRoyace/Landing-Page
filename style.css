@@ -170,24 +170,29 @@ hr {
 
 .products{
     background: rgb(240, 124, 124);
-    display: flex;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .boxes{
-    margin: 5% 1%;
+    position: relative;
+    margin: 5% 0%;
     background-color: rgb(235, 214, 214);
-    padding: 2%;
-    height: 350px;
-    width: 250px;
+    padding: 3%;
+    height: 360px;
+    width: 260px;
     border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
 }
 
 .boxes img{
     margin: auto;
     height: 200px;
-    width: 250px;
+    width: 260px;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
 }
 
 .products h2{
@@ -195,8 +200,9 @@ hr {
 }
 
 .add-cart-btn{
-    position: relative;
-    left: 25%;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
     color: aliceblue;
     background-color: crimson;
     padding: 10px 16px;
@@ -226,7 +232,7 @@ hr {
 
 .reviews{
     /* background-color: antiquewhite; */
-    background-color: #2F8F9D;
+    background-color: #d8e8f1;
     padding: 3%;
     display: flex;
 }
@@ -240,14 +246,14 @@ hr {
 
 .reviews p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(206, 215, 223);
+    color: rgba(31, 37, 43, 0.788);
     font-style: italic;
 }
 
 .review-box{
     margin: 1%;
     /* background-color: rgba(25, 105, 79, 0.589); */
-    background-color: #3BACB6;
+    background-color: #d5f1f3;
     border-radius: 10px;
     padding: 2%;
     box-shadow: 0 5px 10px rgb(76, 81, 83);
@@ -324,7 +330,7 @@ footer p{
 **********************************************************************************************/
 .contact{
     text-align: center;
-    background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.445), rgb(160, 17, 17));
+    background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.774));
 }
 
 .contact h1{
@@ -336,7 +342,7 @@ footer p{
 }
 
 .contact-form{
-    background: rgba(15, 57, 134, 0.63);
+    /* background: rgba(15, 57, 134, 0.63); */
     /* width: 70%; */
     margin: auto;
     padding-bottom: 10%;
@@ -344,7 +350,9 @@ footer p{
 
 .contact-form input, textarea{
     color: rgb(236, 236, 236);
-    background: rgba(0, 0, 0, 0.884);
+    /* background: rgba(0, 0, 0, 0.884); */
+    background: rgba(8, 8, 8, 0.884);
+    /* box-shadow: 0 0 10px rgb(160, 160, 160); */
     padding: 1%;
     font-size: 1.2rem;
     border: 0;
