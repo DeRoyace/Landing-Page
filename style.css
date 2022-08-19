@@ -3,16 +3,16 @@ body {
     /* user-select: none; */
 }
 
-img{
+img {
     user-select: none;
 }
 
-::selection{
+::selection {
     color: rgb(209, 213, 216);
     background-color: #037a39;
 }
 
-main{
+main {
     background-image: url('images/food-bg2.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -30,6 +30,7 @@ main{
     right: 5%;
     top: 2%;
     font-size: 21px;
+    visibility: visible;
 }
 
 .link-items {
@@ -51,7 +52,7 @@ main{
 }
 
 .brand img {
-    width: 10%;
+    width: 9%;
     margin: auto 5px;
     filter: drop-shadow(0 0 6px rgb(255, 93, 93));
 }
@@ -59,50 +60,70 @@ main{
 .brand a {
     text-decoration: none;
     color: rgb(216, 199, 203);
-    font-size: 43px;
+    font-size: 2.3rem;
     font-weight: 900;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Fascinate', cursive;
     margin: auto 16px;
 }
 
-.menu-icon{
+.menu-icon {
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 25px;
+    top: 25px;
     visibility: hidden;
 }
 
-.icon-div{
+.icon-div {
     width: 30px;
     height: 3px;
     margin: 7px;
     background: white;
 }
 
-@media only screen and (max-width: 950px)
-{
+
+@media only screen and (min-width: 951px) {
     .links{
-        display:none;
-    }
-    .menu-icon{
-        visibility: visible;
+        visibility: visible !important; 
     }
 }
-@media only screen and (max-width: 500px)
-{
-    .brand a{
+@media only screen and (max-width: 950px) {
+    .links {
+        visibility: collapse;
+    }
+
+    .menu-icon {
+        visibility: visible;
+    }
+
+    .icon-nav-menu {
+        display: grid;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 70%;
+        height: 70%;
+        padding: 7%;
+        font-size: 1.2rem;
+        background: rgba(0, 0, 0, 0.877);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .brand a {
         font-size: 2rem;
     }
-    .brand img{
+
+    .brand img {
         width: 45px;
     }
 }
 
-
 .intro {
     background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.726), rgb(0, 0, 0));
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
     padding-bottom: 5%;
     display: grid;
     /* grid-template-columns: 60% 40%; */
@@ -111,14 +132,14 @@ main{
     /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
 }
 
-.intro-box2{
+.intro-box2 {
     /* width: 40%; */
     text-align: center;
 }
 
 .intro-box2 img {
     margin: auto;
-    filter: drop-shadow( 0 3px 7px white);
+    filter: drop-shadow(0 3px 7px white);
     /* max-width: 250px; */
 }
 
@@ -129,8 +150,11 @@ main{
 }
 
 .intro-box1 h1 {
-    color: azure;
+    color: rgba(255, 255, 255, 0.863);
+    text-shadow: 0 5px 5px #330707;
+    font-family: 'Kaushan Script', cursive;
     font-size: 5rem;
+    margin: 0;
     padding: 0;
 }
 
@@ -148,13 +172,14 @@ main{
     padding: 10px 25px;
     margin-top: 3%;
     margin-right: 2%;
+    margin-bottom: 5%;
     border-radius: 7px;
     border: 0;
     cursor: pointer;
     box-shadow: 3px 3px 7px rgb(170, 170, 170);
 }
 
-.intro button:hover{
+.intro button:hover {
     background-color: rgb(66, 8, 20);
 }
 
@@ -167,11 +192,11 @@ main{
 
 @media only screen and (max-width: 1000px) {
 
-    .intro-box1 h1{
+    .intro-box1 h1 {
         font-size: 3rem;
     }
 
-    .intro-box2 img{
+    .intro-box2 img {
         display: grid;
         grid-template-columns: 100% 100%;
         width: 300px;
@@ -230,30 +255,31 @@ hr {
 }
 
 @media only screen and (max-width: 830px) {
-    
-    .about-content1, .about-content2
-    {
+
+    .about-content1,
+    .about-content2 {
         display: grid;
         /* grid-template-columns: 100%; */
         margin: auto;
     }
 
-    .about p{
+    .about p {
         margin: 5% auto;
         width: fit-content;
     }
 
-    .about img{
+    .about img {
         margin: auto;
         width: 200px;
         height: 200px;
     }
-    .about hr{
+
+    .about hr {
         width: 20%;
     }
 }
 
-.products{
+.products {
     background: rgb(240, 124, 124);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1.5fr));
@@ -261,7 +287,7 @@ hr {
     padding-bottom: 3%;
 }
 
-.boxes{
+.boxes {
     position: relative;
     margin: 5% auto;
     background-color: rgb(235, 214, 214);
@@ -272,7 +298,7 @@ hr {
     box-shadow: 0 3px 10px rgb(0, 0, 0);
 }
 
-.boxes img{
+.boxes img {
     margin: auto;
     height: 200px;
     width: 260px;
@@ -280,11 +306,11 @@ hr {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.842);
 }
 
-.products h2{
+.products h2 {
     display: inline;
 }
 
-.add-cart-btn{
+.add-cart-btn {
     position: absolute;
     right: 5%;
     bottom: 5%;
@@ -297,11 +323,11 @@ hr {
     cursor: pointer;
 }
 
-.add-cart-btn:active{
+.add-cart-btn:active {
     background-color: rgb(184, 4, 40);
 }
 
-.partners{
+.partners {
     /* background-color: rgb(235, 214, 214); */
     background-color: #2C3639;
     display: flex;
@@ -309,13 +335,13 @@ hr {
     padding: 2%;
 }
 
-.partners img{
+.partners img {
     margin: auto 1%;
     height: 30%;
     width: 18%;
 }
 
-.reviews{
+.reviews {
     /* background-color: antiquewhite; */
     background-color: #d8e8f1;
     padding: 3%;
@@ -323,20 +349,20 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.reviews h3{
+.reviews h3 {
     color: rgba(29, 37, 43, 0.61);
     font-size: 23px;
     font-weight: 700;
     margin: 0;
 }
 
-.reviews p{
+.reviews p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgba(31, 37, 43, 0.788);
     font-style: italic;
 }
 
-.review-box{
+.review-box {
     margin: 2%;
     /* background-color: rgba(25, 105, 79, 0.589); */
     background-color: #d5f1f3;
@@ -347,26 +373,26 @@ hr {
 
 /* ******************************* CONTACT SECTION - Home Page ************************************ */
 
-.contact-link{
+.contact-link {
     background: linear-gradient(90deg, rgb(99, 49, 165), rgb(161, 4, 96));
     padding: 6% 5%;
     text-align: center;
 }
 
-.contact-link h1{
+.contact-link h1 {
     font-size: 3.5rem;
     color: rgb(223, 140, 188);
     margin: 0;
 }
 
-.contact-link p{
+.contact-link p {
     color: aliceblue;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 4%;
 }
 
-.contact-link button{
+.contact-link button {
     color: aliceblue;
     font-size: 20px;
     background-color: crimson;
@@ -376,40 +402,41 @@ hr {
     cursor: pointer;
 }
 
-.contact-link button:hover{
+.contact-link button:hover {
     background-color: goldenrod;
 }
 
-.contact-link button:active{
+.contact-link button:active {
     background-color: rgb(182, 14, 48);
 }
 
 
-@media only screen and (max-width: 600px)
-{
-    .contact-link h1{
+@media only screen and (max-width: 600px) {
+    .contact-link h1 {
         font-size: 2.5rem;
         margin-top: 3%;
     }
-    .contact-link p{
+
+    .contact-link p {
         font-size: 16px;
         width: 60%;
         margin: 5% auto;
     }
-    .contact-link button{
+
+    .contact-link button {
         margin: 5% auto;
     }
 }
 
 /* **************************************** FOOTER SECTION **************************************** */
 
-footer{
+footer {
     text-align: center;
     background-color: rgb(3, 16, 59);
     padding: 5%;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     margin: 1%;
     padding: 5px 2px;
@@ -418,30 +445,30 @@ footer a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-footer a:hover{
+footer a:hover {
     color: azure;
 }
 
-footer p{
+footer p {
     color: rgba(240, 248, 255, 0.808);
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 3% auto 0 auto;
 }
 
-@media only screen and (max-width: 600px)
-{
-    footer{
+@media only screen and (max-width: 600px) {
+    footer {
         padding-top: 10%;
     }
-    footer a{
+
+    footer a {
         font-size: 18px;
         display: block;
         width: fit-content;
         margin: auto;
     }
 
-    footer p{
+    footer p {
         margin: 7% auto;
         font-size: 16px;
     }
@@ -450,12 +477,12 @@ footer p{
 /*********************************************************************************************
                             Contact.html file Styling CSS
 **********************************************************************************************/
-.contact{
+.contact {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.774));
+    background: linear-gradient(rgb(9, 1, 46), rgba(0, 0, 0, 0.774));
 }
 
-.contact h1{
+.contact h1 {
     color: rgba(240, 248, 255, 0.733);
     font-size: 4rem;
     padding: 5%;
@@ -463,19 +490,22 @@ footer p{
     margin: 0;
 }
 
-.contact-form{
+.contact-form {
     /* background: rgba(15, 57, 134, 0.63); */
     /* width: 70%; */
     margin: auto;
     padding-bottom: 10%;
 }
 
-.contact-form input, textarea{
+.contact input,
+textarea {
+    display: flex;
     color: rgb(236, 236, 236);
     /* background: rgba(0, 0, 0, 0.884); */
     background: rgba(8, 8, 8, 0.884);
     /* box-shadow: 0 0 10px rgb(160, 160, 160); */
-    padding: 1%;
+    padding: 1.5%;
+    padding-left: 20px;
     font-size: 1.2rem;
     border: 0;
     border-top-left-radius: 10px;
@@ -483,9 +513,10 @@ footer p{
     border-bottom: 5px solid rgba(255, 255, 255, 0.726);
     text-decoration: none;
     user-select: none;
-    margin: 0.7%;
-    width: 30%;
-    outline: none; /*removes outline on focuse/ while typing*/
+    margin: 1.5%;
+    width: 390px;
+    outline: none;
+    /*removes outline on focuse/ while typing*/
 }
 
 /* :focus::placeholder{
@@ -495,51 +526,61 @@ footer p{
     top: 1%;
 } */
 
-.contact input[type="submit"]{
+.contact input{
+    height: 50px;
+}
+
+.contact textarea{
+    padding-top: 27px;
+}
+
+.contact input[type="submit"] {
     cursor: pointer;
     border: 0;
     border-radius: 5px;
-    width: 32%;
-    /* width: 15%; */
-    background: linear-gradient(rgb(36, 35, 35), rgb(0,0,0));
+    width: 390px;
+    background: linear-gradient(rgb(36, 35, 35), rgb(0, 0, 0));
 }
 
-.contact input[type="submit"]:active{
-    background: rgb(0,0,0);
+.contact input[type="submit"]:active {
+    background: rgb(0, 0, 0);
 }
 
-.contact-form div{
+.input-fields{
+    width: max-content;
+}
+
+.contact-form div {
     position: relative;
-    /* width: 400px; */
     margin: auto;
 }
 
-.contact-form label{
+.contact-form label {
     position: absolute;
-    top: 1%;
-    right: 34%;
+    top: 5%;
+    right: 0%;
     margin: 1%;
     color: rgba(18, 231, 160, 0.699);
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.hours{
+.hours {
     background: rgba(172, 40, 40, 0.76);
     padding: 10%;
 }
 
-.hours h1{
+.hours h1 {
     color: rgba(255, 237, 132, 0.74);
     font-size: 4.5rem;
     margin: 0 auto 7% auto;
 }
 
-.hours table{
+.hours table {
     width: 80%;
 }
 
-.hours th{
+.hours th {
     color: rgb(66, 4, 35);
     font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -547,7 +588,7 @@ footer p{
     padding-bottom: 3%;
 }
 
-.hours td{
+.hours td {
     color: rgba(240, 248, 255, 0.795);
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -555,37 +596,39 @@ footer p{
     padding-bottom: 0.5%;
 }
 
-.days{
+.days {
     padding-left: 20%;
 }
 
-.timings{
+.timings {
     padding-left: 14%;
 }
 
 /********************************* End of contact **************************************************/
 
-.products{
+.products {
     position: relative;
 }
 
-.prev, .next{
+.prev,
+.next {
     position: absolute;
     top: 40%;
     bottom: 40%;
     padding: 15px 10px 10px 10px;
-    height:fit-content;
+    height: fit-content;
     color: #151e20bb;
     font-size: 32px;
     background-color: rgba(240, 248, 255, 0.507);
     cursor: pointer;
 }
 
-.next{
+.next {
     right: 0;
 }
 
-.prev:hover, .next:hover{
+.prev:hover,
+.next:hover {
     color: aliceblue;
     background: rgb(77, 75, 75);
 }
