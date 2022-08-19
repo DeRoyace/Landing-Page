@@ -1,3 +1,23 @@
+console.log(document.URL);
+var c = 0;
+function navResponse()
+{
+    var a = document.getElementById('nav-links');
+    console.log(a);
+    if(c%2 === 0)
+    {
+        a.classList.add('icon-nav-menu');
+        a.style.visibility="visible";
+    }
+    else
+    {
+        a.classList.remove('icon-nav-menu');
+        a.style.visibility="collapse";
+    }   
+    c += 1;
+}
+
+
 let index = 0;
 function slideBoxes() {
     let i;
@@ -22,4 +42,12 @@ function plusSlides(n) {
     slideBoxes()
 }
 
-slideBoxes(index)
+slideBoxes(index);
+
+// end of sliding
+
+
+// document.getElementsByClassName(".menu-icon").addEventListener("click", function(){
+//     document.getElementsByClassName("links").style.visibility="visible";
+// });
+
