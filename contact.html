@@ -16,13 +16,18 @@
                 <img src="images/chillies.png" alt="brand-logo">
                 <a href="index.html">Red Chillies</a>
             </div>
-            <ul class="links">
+            <ul class="links" id="nav-links">
                 <a href="index.html" class="link-items" id="link1">Home</a>
                 <a href="#about" class="link-items" id="link2">About</a>
                 <a href="#menu" class="link-items" id="link3">Menu</a>
                 <a href="contact.html" class="link-items" id="link4"
                     style="border-bottom: 3px solid whitesmoke;">Contact</a>
             </ul>
+            <div class="menu-icon" onclick="navResponse()">
+                <div class="icon-div" id="rod1"></div>
+                <div class="icon-div" id="rod2"></div>
+                <div class="icon-div" id="rod3"></div>
+            </div>
         </nav>
 
         <div class="contact">
@@ -30,28 +35,28 @@
                 <h1>Contact</h1>
 
                 <form action="mailto: creative.roy2003@gmail.com" method="post" enctype="text/plain">
-                    <div>
+                    <div class="input-fields">
                         <label for="name">Name*</label>
                         <input type="text" name="Customer-Name" placeholder="your full name" required>
                     </div>
-                    <div>
+                    <div class="input-fields">
                         <label for="phone">Phone</label>
-                        <input type="tel" name="PhoneNo." placeholder="10-digit mobile number">
+                        <input type="tel" name="PhoneNo." placeholder="10-digit mobile number" maxlength="10">
                     </div>
-                    <div>
+                    <div class="input-fields">
                         <label for="email-id">Email-id*</label>
                         <input type="email" name="email" id="" placeholder="xyz@example.com" required>
                     </div>
-                    <div>
+                    <div class="input-fields">
                         <label for="address">Address</label>
-                        <textarea name="address" id="" cols="30" rows="3"
+                        <textarea name="address" id="" cols="10" rows="3"
                             placeholder="enter you house address"></textarea>
                     </div>
-                    <div>
+                    <div class="input-fields">
                         <label for="message">Message*</label>
-                        <textarea name="message" id="" cols="30" rows="5" placeholder="enter your query" required></textarea>
+                        <textarea name="message" id="" cols="10" rows="5" placeholder="enter your query" required></textarea>
                     </div>
-                    <div>
+                    <div class="input-fields">
                         <input type="submit" value="Submit">
                     </div>
                 </form>
