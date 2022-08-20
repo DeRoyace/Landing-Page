@@ -513,8 +513,8 @@ textarea {
     border-bottom: 5px solid rgba(255, 255, 255, 0.726);
     text-decoration: none;
     user-select: none;
-    margin: 1.5%;
-    width: 390px;
+    margin: 2% auto;
+    width: 80%;
     outline: none;
     /*removes outline on focuse/ while typing*/
 }
@@ -535,19 +535,20 @@ textarea {
 }
 
 .contact input[type="submit"] {
-    cursor: pointer;
-    border: 0;
+    border: 3px solid green;
     border-radius: 5px;
-    width: 390px;
-    background: linear-gradient(rgb(36, 35, 35), rgb(0, 0, 0));
+    width: 85%;
+    padding: 0;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .contact input[type="submit"]:active {
-    background: rgb(0, 0, 0);
+    background: green;
 }
 
 .input-fields{
-    width: max-content;
+    max-width: 600px;
 }
 
 .contact-form div {
@@ -558,7 +559,7 @@ textarea {
 .contact-form label {
     position: absolute;
     top: 5%;
-    right: 0%;
+    right: 8%;
     margin: 1%;
     color: rgba(18, 231, 160, 0.699);
     font-size: 15px;
