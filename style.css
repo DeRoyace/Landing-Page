@@ -33,12 +33,16 @@ main {
     visibility: visible;
 }
 
-.link-items {
+.link-items{
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     margin-left: 20px;
     padding: 5px 0px;
+}
+
+.active-link{
+    border-bottom: 3px solid whitesmoke;
 }
 
 .link-items:hover {
@@ -70,6 +74,7 @@ main {
     position: absolute;
     right: 25px;
     top: 25px;
+    z-index: 1;
     visibility: hidden;
 }
 
@@ -78,8 +83,21 @@ main {
     height: 3px;
     margin: 7px;
     background: white;
+    transition: 600ms;
 }
 
+.make-cross #rod1{
+    transform: rotate(45deg) translate(7px,7px);
+    transition: 600ms;
+}
+.make-cross #rod2{
+    opacity: 0;
+    transition: 600ms;
+}
+.make-cross #rod3{
+    transform: rotate(-45deg) translate(7px, -7px);
+    transition: 600ms;
+}
 
 @media only screen and (min-width: 951px) {
     .links{
@@ -95,18 +113,26 @@ main {
         visibility: visible;
     }
 
+    .link-items{
+        margin: 30px 0px 30px 30px;
+    }
+
     .icon-nav-menu {
-        display: grid;
-        position: absolute;
-        top: 50px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
         right: 0;
-        width: 70%;
-        height: 70%;
+        margin: 0;
+        width: 63%;
+        height: 100%;
         padding: 7%;
-        font-size: 1.2rem;
-        background: rgba(0, 0, 0, 0.877);
+        padding-top: 90px;
+        z-index: 1;
+        font-size: 2rem;
+        background: rgb(0, 0, 0);
         border-top-left-radius: 50px;
-        border-bottom-left-radius: 16px;
+        transition: 300ms;
     }
 }
 
