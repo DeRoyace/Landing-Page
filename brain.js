@@ -1,22 +1,33 @@
-console.log(document.URL);
 var c = 0;
 function navResponse()
 {
-    var a = document.getElementById('nav-links');
+    let a = document.getElementById('nav-links');
+    let b = document.getElementById('ham-icon');
     console.log(a);
+    let links = document.getElementsByClassName('link-items');
+    var pos = 0;
     if(c%2 === 0)
     {
         a.classList.add('icon-nav-menu');
+        for (let index = 0; index < 4; index++) {
+            if(links[index].classList.contains('active-link'))
+                pos = index;
+        }
+        links[pos].classList.remove('active-link');
+        b.style.position="fixed";
+        b.classList.add('make-cross');
         a.style.visibility="visible";
     }
     else
     {
         a.classList.remove('icon-nav-menu');
+        links[pos].classList.add('active-link');
+        b.style.position="absolute";
+        b.classList.remove('make-cross');
         a.style.visibility="collapse";
     }   
     c += 1;
 }
-
 
 let index = 0;
 function slideBoxes() {
