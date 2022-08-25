@@ -21,10 +21,12 @@ function navResponse()
     else
     {
         a.classList.remove('icon-nav-menu');
-        links[pos].classList.add('active-link');
+        a.style.visibility="collapse";
+        setTimeout(function(){
+            links[pos].classList.add('active-link');
+        }, 350);
         b.style.position="absolute";
         b.classList.remove('make-cross');
-        a.style.visibility="collapse";
     }   
     c += 1;
 }
