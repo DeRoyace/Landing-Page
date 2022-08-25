@@ -107,6 +107,7 @@ main {
 }
 @media only screen and (max-width: 950px) {
     .links {
+        visibility: hidden;
         display: flex;
         flex-direction: column;
         z-index: 1;
