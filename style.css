@@ -12,6 +12,35 @@ img {
     background-color: #037a39;
 }
 
+.loading{
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: #161618;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.loading div{
+    width: 100px;
+    height: 100px;
+    border: 16px solid rgb(43, 42, 42);
+    border-radius: 100px;
+    border-top: 16px solid rgb(28, 155, 206);
+    animation: loop 1.85s infinite ease-in-out;
+}
+@keyframes loop{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(2turn);
+    }
+}
+
 main {
     background-image: url('images/food-bg2.jpg');
     background-size: cover;
