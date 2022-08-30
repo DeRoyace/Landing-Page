@@ -1,3 +1,9 @@
+window.addEventListener("load", function(){
+    let load = this.document.querySelector(".loading");
+    load.style.opacity = "0";
+    load.style.visibility = "hidden"
+});
+
 var c = 0;
 function navResponse()
 {
