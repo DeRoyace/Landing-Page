@@ -7,32 +7,33 @@ window.addEventListener("load", function(){
 var c = 0;
 function navResponse()
 {
-    let a = document.getElementById('nav-links');
-    let b = document.getElementById('ham-icon');
-    console.log(a);
+    let nav_menus = document.getElementById('nav-links');
+    let ham_icon = document.getElementById('ham-icon');
+    console.log(nav_menus);
     let links = document.getElementsByClassName('link-items');
     var pos = 0;
     if(c%2 === 0)
     {
-        a.classList.add('icon-nav-menu');
+        nav_menus.classList.add('icon-nav-menu');
         for (let index = 0; index < 4; index++) {
             if(links[index].classList.contains('active-link'))
                 pos = index;
         }
         links[pos].classList.remove('active-link');
-        b.style.position="fixed";
-        b.classList.add('make-cross');
-        a.style.visibility="visible";
+        ham_icon.style.position="fixed";
+        ham_icon.classList.add('make-cross');
+        nav_menus.style.visibility="visible";
+        nav_menus.style.opacity = "1";
     }
     else
     {
-        a.classList.remove('icon-nav-menu');
-        a.style.visibility="collapse";
+        nav_menus.classList.remove('icon-nav-menu');
+        nav_menus.style.opacity = "0"
         setTimeout(function(){
             links[pos].classList.add('active-link');
         }, 350);
-        b.style.position="absolute";
-        b.classList.remove('make-cross');
+        ham_icon.style.position="absolute";
+        ham_icon.classList.remove('make-cross');
     }   
     c += 1;
 }
