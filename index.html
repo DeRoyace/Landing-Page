@@ -12,170 +12,184 @@
 </head>
 
 <body>
-    <main>
+    <section class="loading">
+        <div class="load-wheel"></div>
+    </section>
 
-        <nav class="navbar">
-            <div class="brand">
-                <img src="images/chillies.png" alt="brand-logo">
-                <a href="index.html">Red Chillies</a>
+    <section class="main-page">
+        <main>
+
+            <nav class="navbar">
+                <div class="brand">
+                    <img src="images/chillies.png" alt="brand-logo">
+                    <a href="index.html">Red Chillies</a>
+                </div>
+                <ul class="links" id="nav-links">
+                    <a href="index.html" class="link-items active-link" id="link1">Home</a>
+                    <a href="#about" class="link-items" id="link2">About</a>
+                    <a href="#menu" class="link-items" id="link3">Menu</a>
+                    <a href="contact.html" class="link-items" id="link4">Contact</a>
+                </ul>
+                <div class="menu-icon" id="ham-icon" onclick="navResponse()">
+                    <div class="icon-div" id="rod1"></div>
+                    <div class="icon-div" id="rod2"></div>
+                    <div class="icon-div" id="rod3"></div>
+                </div>
+            </nav>
+
+            <div class="intro">
+                <div class="intro-box1">
+                    <h1>Welcome to Red Chillies !!</h1>
+                    <p class="intro-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro ut nihil accusantium, debitis
+                        dolores quaerat deleniti nemo, obcaecati est consequuntur commodi quo consequatur quisquam
+                        earum.
+                        Incidunt, quos vitae. Deleniti.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maxime laboriosam eligendi
+                        distinctio
+                        fugiat, atque voluptatibus magnam illo. Reiciendis, sint?</p>
+                    <button>Order Now</button>
+                    <button>Contact us</button>
+                </div>
+                <div class="intro-box2">
+                    <img src="images/chef.png" alt="chef">
+                </div>
             </div>
-            <ul class="links" id="nav-links">
-                <a href="index.html" class="link-items active-link" id="link1">Home</a>
-                <a href="#about" class="link-items" id="link2">About</a>
-                <a href="#menu" class="link-items" id="link3">Menu</a>
-                <a href="contact.html" class="link-items" id="link4">Contact</a>
-            </ul>
-            <div class="menu-icon" id="ham-icon" onclick="navResponse()">
-                <div class="icon-div" id="rod1"></div>
-                <div class="icon-div" id="rod2"></div>
-                <div class="icon-div" id="rod3"></div>
+
+            <div class="about" id="about">
+                <h2>About</h2>
+                <div class="about-content1">
+                    <img src="images/Self.jpg" alt="owner-pic">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium explicabo quae
+                        ullam.
+                        Adipisci eaque assumenda cum vel excepturi voluptatibus consequuntur tempora commodi, officia
+                        necessitatibus corrupti veritatis reiciendis, tenetur quisquam?</p>
+                </div>
+                <hr>
+                <div class="about-content2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum similique quo, modi libero
+                        dolore
+                        nihil, fugiat tenetur eius repellat voluptatibus recusandae ducimus perspiciatis odio obcaecati.
+                    </p>
+                    <img src="images/30-years-experience-rosette.jpg" alt="30yearsExp">
+                </div>
+                <hr>
+                <!-- <div class="hrline"></div> -->
             </div>
-        </nav>
+        </main>
 
-        <div class="intro">
-            <div class="intro-box1">
-                <h1>Welcome to Red Chillies !!</h1>
-                <p class="intro-para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro ut nihil accusantium, debitis
-                    dolores quaerat deleniti nemo, obcaecati est consequuntur commodi quo consequatur quisquam earum.
-                    Incidunt, quos vitae. Deleniti.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maxime laboriosam eligendi distinctio
-                    fugiat, atque voluptatibus magnam illo. Reiciendis, sint?</p>
-                <button>Order Now</button>
-                <button>Contact us</button>
+        <div class="products" id="menu">
+            <div class="boxes" id="box1">
+                <img src="images/110.-Schewan-Paneer-Rolls.jpg" alt="panner roll">
+                <h3>Schezwan Panner Kathi Roll</h3>
+                <p>Panner, Capsicum, Onion, Indian mixed spices, oregano, mustard Sauce</p>
+                <h2>Rs. 80</h2>
+                <button class="add-cart-btn">Add to Cart</button>
             </div>
-            <div class="intro-box2">
-                <img src="images/chef.png" alt="chef">
+            <div class="boxes" id="box2">
+                <img src="images/grillsandwich.webp" alt="">
+                <h3>Grilled Cheese Sandwich</h3>
+                <p>Cheddar Cheese, Tomatoes, Onions, Oregano, Letus, Coriander, Pepper</p>
+                <h2>Rs. 99</h2>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="boxes" id="box3">
+                <img src="images/pizza.jpeg" alt="">
+                <h3>Mushroom Italiano Pizza</h3>
+                <p>Mushroom, Pepper, Olives, Oregano, Tomatoes, Mozrella Cheese, Brocolli</p>
+                <h2>Rs. 499</h2>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="boxes" id="box4">
+                <img src="images/cheesecake-with-chocolate-sauce.webp" alt="">
+                <h3>Cheesecake & Black Latte</h3>
+                <p>Cream Cheese, Chocoloate syrup, Mint, Black Coffee</p>
+                <h2>Rs. 199</h2>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="boxes" id="box5">
+                <img src="images/gulab-jamun-indian-desserts.jpg" alt="">
+                <h3>Gulab Jamun</h3>
+                <p>Sugar syrup, Fried Milk balls</p>
+                <h2>Rs. 20/pc</h2>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="boxes" id="box6">
+                <img src="images/indian-thali.jpg" alt="">
+                <h3>Cheesecake & Black Latte</h3>
+                <p>Cream Cheese, Chocoloate syrup, Mint, Black Coffee</p>
+                <h2>Rs. 199</h2>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="boxes" id="box7">
+                <img src="images/Hyderabadi-biryani.jpg" alt="">
+                <h3>Cheesecake & Black Latte</h3>
+                <p>Cream Cheese, Chocoloate syrup, Mint, Black Coffee</p>
+                <h2>Rs. 199</h2>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="partners">
+            <img src="images/Swiggy_logo.png" alt="" class="com1">
+            <img src="images/uber-eats.png" alt="" class="com2">
+            <img src="images/zomato-box.webp" alt="" class="com3">
+            <img src="images/food-panda.png" alt="" class="com4">
+            <img src="images/food-delivery-wall.webp" alt="" class="com5">
+        </div>
+
+        <div class="reviews">
+            <div class="review-box" id="review1">
+                <h3>Adrish</h3>
+                <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful
+                    presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come
+                    back
+                    here again and again.</p>
+            </div>
+            <div class="review-box" id="review2">
+                <h3>Aushnik</h3>
+                <p>I have to say, I enjoyed every single bite of the meal in (RC). I had a 3 course meal, with a couple
+                    of
+                    beers. Considering the quality, the price is reasonable. Ideal for those who want a romantic night
+                    out.
+                    There was also plenty of room for bigger groups.</p>
+            </div>
+            <div class="review-box" id="review3">
+                <h3>Prakiran</h3>
+                <p>This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know
+                    what
+                    they’re doing and what they’re talking about, and you can tell making the customers happy is their
+                    main
+                    priority. Food is pretty good, some italian classics and some twists, and for their prices it’s 100%
+                    worth it.</p>
             </div>
         </div>
 
-        <div class="about" id="about">
-            <h2>About</h2>
-            <div class="about-content1">
-                <img src="images/Self.jpg" alt="owner-pic">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium explicabo quae ullam.
-                    Adipisci eaque assumenda cum vel excepturi voluptatibus consequuntur tempora commodi, officia
-                    necessitatibus corrupti veritatis reiciendis, tenetur quisquam?</p>
+        <div class="contact-link">
+            <h1>Get in Touch</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur error enim
+                suscipit fuga explicabo?</p>
+            <button type="button" onclick="window.location.href='contact.html'">Contact us</button>
+        </div>
+
+        <footer>
+            <div class="soclinks">
+                <a href="" class="twitter">Twitter</a>
+                <a href="" class="insta">Instagram</a>
+                <a href="" class="fb">Facebook</a>
+                <a href="" class="youtube">YouTube</a>
+                <a href="" class="telegram">Telegram</a>
             </div>
-            <hr>
-            <div class="about-content2">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum similique quo, modi libero dolore
-                    nihil, fugiat tenetur eius repellat voluptatibus recusandae ducimus perspiciatis odio obcaecati.
-                </p>
-                <img src="images/30-years-experience-rosette.jpg" alt="30yearsExp">
-            </div>
-            <hr>
-            <!-- <div class="hrline"></div> -->
-        </div>
-    </main>
-
-    <div class="products" id="menu">
-        <div class="boxes" id="box1">
-            <img src="images/110.-Schewan-Paneer-Rolls.jpg" alt="panner roll">
-            <h3>Schezwan Panner Kathi Roll</h3>
-            <p>Panner, Capsicum, Onion, Indian mixed spices, oregano, mustard Sauce</p>
-            <h2>Rs. 80</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <div class="boxes" id="box2">
-            <img src="images/grillsandwich.webp" alt="">
-            <h3>Grilled Cheese Sandwich</h3>
-            <p>Cheddar Cheese, Tomatoes, Onions, Oregano, Letus, Coriander, Pepper</p>
-            <h2>Rs. 99</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <div class="boxes" id="box3">
-            <img src="images/pizza.jpeg" alt="">
-            <h3>Mushroom Italiano Pizza</h3>
-            <p>Mushroom, Pepper, Olives, Oregano, Tomatoes, Mozrella Cheese, Brocolli</p>
-            <h2>Rs. 499</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <div class="boxes" id="box4">
-            <img src="images/cheesecake-with-chocolate-sauce.webp" alt="">
-            <h3>Cheesecake & Black Latte</h3>
-            <p>Cream Cheese, Chocoloate syrup, Mint, Black Coffee</p>
-            <h2>Rs. 199</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <div class="boxes" id="box5">
-            <img src="images/gulab-jamun-indian-desserts.jpg" alt="">
-            <h3>Gulab Jamun</h3>
-            <p>Sugar syrup, Fried Milk balls</p>
-            <h2>Rs. 20/pc</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <div class="boxes" id="box6">
-            <img src="images/indian-thali.jpg" alt="">
-            <h3>Cheesecake & Black Latte</h3>
-            <p>Cream Cheese, Chocoloate syrup, Mint, Black Coffee</p>
-            <h2>Rs. 199</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <div class="boxes" id="box7">
-            <img src="images/Hyderabadi-biryani.jpg" alt="">
-            <h3>Cheesecake & Black Latte</h3>
-            <p>Cream Cheese, Chocoloate syrup, Mint, Black Coffee</p>
-            <h2>Rs. 199</h2>
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <div class="partners">
-        <img src="images/Swiggy_logo.png" alt="" class="com1">
-        <img src="images/uber-eats.png" alt="" class="com2">
-        <img src="images/zomato-box.webp" alt="" class="com3">
-        <img src="images/food-panda.png" alt="" class="com4">
-        <img src="images/food-delivery-wall.webp" alt="" class="com5">
-    </div>
-
-    <div class="reviews">
-        <div class="review-box" id="review1">
-            <h3>Adrish</h3>
-            <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful
-                presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back
-                here again and again.</p>
-        </div>
-        <div class="review-box" id="review2">
-            <h3>Aushnik</h3>
-            <p>I have to say, I enjoyed every single bite of the meal in (RC). I had a 3 course meal, with a couple of
-                beers. Considering the quality, the price is reasonable. Ideal for those who want a romantic night out.
-                There was also plenty of room for bigger groups.</p>
-        </div>
-        <div class="review-box" id="review3">
-            <h3>Prakiran</h3>
-            <p>This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what
-                they’re doing and what they’re talking about, and you can tell making the customers happy is their main
-                priority. Food is pretty good, some italian classics and some twists, and for their prices it’s 100%
-                worth it.</p>
-        </div>
-    </div>
-
-    <div class="contact-link">
-        <h1>Get in Touch</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur error enim
-            suscipit fuga explicabo?</p>
-        <button type="button" onclick="window.location.href='contact.html'">Contact us</button>
-    </div>
-
-    <footer>
-        <div class="soclinks">
-            <a href="" class="twitter">Twitter</a>
-            <a href="" class="insta">Instagram</a>
-            <a href="" class="fb">Facebook</a>
-            <a href="" class="youtube">YouTube</a>
-            <a href="" class="telegram">Telegram</a>
-        </div>
-        <p class="copyright">
-            ©️ Copyright Roys Codes 2022
-        </p>
-    </footer>
-
+            <p class="copyright">
+                ©️ Copyright Roys Codes 2022
+            </p>
+        </footer>
+    </section>
     <script src="brain.js"></script>
 </body>
 
