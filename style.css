@@ -12,6 +12,19 @@ img {
     background-color: #037a39;
 }
 
+::-webkit-scrollbar{
+    width: 7px;
+    background: rgb(34, 34, 37);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(136, 5, 5);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: radial-gradient(rgb(182, 8, 8), rgb(128, 7, 7));
+}
+
 .loading{
     position: fixed;
     z-index: 2;
@@ -479,26 +492,26 @@ hr {
 
 /* ******************************* CONTACT SECTION - Home Page ************************************ */
 
-.contact-link {
+.newsletter {
     background: linear-gradient(90deg, rgb(99, 49, 165), rgb(161, 4, 96));
     padding: 6% 5%;
     text-align: center;
 }
 
-.contact-link h1 {
+.newsletter h1 {
     font-size: 3.5rem;
     color: rgb(223, 140, 188);
     margin: 0;
 }
 
-.contact-link p {
+.newsletter p {
     color: aliceblue;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 4%;
 }
 
-.contact-link button {
+.newsletter button {
     color: aliceblue;
     font-size: 20px;
     background-color: crimson;
@@ -508,42 +521,92 @@ hr {
     cursor: pointer;
 }
 
-.contact-link button:hover {
+.newsletter button:hover {
     background-color: goldenrod;
 }
 
-.contact-link button:active {
+.newsletter button:active {
     background-color: rgb(182, 14, 48);
+}
+
+/* ************************** */
+form input{
+    font-size: 1.5rem;
+    border: 0;
+    outline: none;
+    margin: 0;
+    transition: 300ms;
+}
+#email{
+    padding: 1% 2%;
+    background: rgb(192, 192, 192);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#email:focus{
+    background: rgb(236, 236, 236);
+}
+
+#subscribe{
+    color: aliceblue;
+    background-color: crimson;
+    padding: 1% 2.8%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+}
+#subscribe:hover{
+    background-color: goldenrod;
 }
 
 
 @media only screen and (max-width: 600px) {
-    .contact-link h1 {
+    .newsletter h1 {
         font-size: 2.5rem;
         margin-top: 3%;
     }
 
-    .contact-link p {
+    .newsletter p {
         font-size: 16px;
         width: 60%;
         margin: 5% auto;
     }
 
-    .contact-link button {
-        margin: 5% auto;
+    form input{
+        font-size: 1rem;
+    }
+    
+    #email{
+        padding: 2%;
+        width: 170px;
+    }
+    #subscribe{
+        padding: 2%;
+        width: 95px;
     }
 }
 
 /* **************************************** FOOTER SECTION **************************************** */
 
 footer {
-    text-align: center;
     background-color: rgb(3, 16, 59);
-    padding: 5%;
 }
 
-footer a {
+.info-grids{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.info-grids div{
+    /* padding: 3%; */
+    margin: 1% 5%;
+}
+
+.info-grids a {
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
     margin: 1%;
     padding: 5px 2px;
     color: rgba(255, 255, 255, 0.623);
@@ -551,15 +614,40 @@ footer a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-footer a:hover {
+.info-grids a:hover {
     color: azure;
 }
 
-footer p {
-    color: rgba(240, 248, 255, 0.808);
-    font-size: 18px;
+footer h3{
+    color: orangered;
+    font-size: 2.2rem;
+    text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 3% auto 0 auto;
+}
+footer p{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.info-grids p {
+    color: goldenrod;
+    margin: 0 auto;
+}
+
+.copyright{
+    color: rgba(240, 248, 255, 0.808);
+    text-align: center;
+    padding: 50px;
+    background: #000;
+    margin: 0;
+}
+.copyright a{
+    text-decoration: none;
+    color: orangered;
+}
+.copyright a:hover{
+    border-bottom: 2px solid;
 }
 
 @media only screen and (max-width: 600px) {
@@ -567,15 +655,15 @@ footer p {
         padding-top: 10%;
     }
 
-    footer a {
-        font-size: 18px;
-        display: block;
-        width: fit-content;
-        margin: auto;
+    .info-grids h3{
+        font-size: 1.5rem;
+    }
+
+    .info-grids a {
+        font-size: 1rem;
     }
 
     footer p {
-        margin: 7% auto;
         font-size: 16px;
     }
 }
