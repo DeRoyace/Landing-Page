@@ -251,26 +251,41 @@ main {
 
 .intro button {
     color: aliceblue;
-    font-size: 18px;
-    background-color: black;
-    padding: 10px 30px;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 160px;
     margin-top: 3%;
     margin-right: 2%;
     margin-bottom: 5%;
-    border-radius: 7px;
-    border: 2px solid whitesmoke;
+    /* border-radius: 7px; */
+    border: 2px solid aliceblue;
     cursor: pointer;
-    /* box-shadow: 2px 3px 10px rgb(221, 220, 220); */
+    background-repeat: no-repeat;
+    transition: 300ms ease-in-out;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
 }
 
-.intro button:hover {
-    /* background-color: rgb(66, 8, 20); */
-    background-color: whitesmoke;
-    color: #000;
+#contact-btn{
+    background-color: rgba(0, 0, 0);
+    background-image: linear-gradient(crimson, crimson);
+    background-position: 160px;
+}
+#contact-btn:hover{
+    background-position: 0;
 }
 
-.intro button:active {
-    background-color: rgb(226, 226, 226);
+#order-btn{
+    background-color: transparent;
+    background-image: linear-gradient(rgb(202, 148, 10), rgba(202, 148, 10));
+    background-size: 0;
+}
+#order-btn:hover {
+    background-size: 100%;
+}
+.intro button:active{
+    position: relative;
+    top: 3px;
+    box-shadow: 0 0 0 black;
 }
 
 @media only screen and (max-width: 1000px) {
