@@ -121,7 +121,7 @@ main {
     visibility: hidden;
 }
 
-.icon-div {
+.icon-rod-div {
     width: 30px;
     height: 3px;
     margin: 7px;
@@ -144,7 +144,8 @@ main {
 
 @media only screen and (min-width: 951px) {
     .links{
-        visibility: visible !important; 
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 }
 @media only screen and (max-width: 950px) {
@@ -167,15 +168,16 @@ main {
         margin: 30px;
     }
     .links::after {
-        content: "";
+        content: '';
         background: url('images/chef.png');
+        background-position: center 20%;
         background-repeat: no-repeat;
         opacity: 0.3;
+        position: absolute;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        position: absolute;
         z-index: -1;
       }
 
@@ -202,18 +204,25 @@ main {
     .brand img {
         width: 45px;
     }
+
+    .links::after{
+        background-position: 10px 30px;
+    }
 }
 
 .intro {
     background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.726), rgb(0, 0, 0));
-    padding-left: 45px;
-    padding-right: 45px;
+    /* padding-left: 45px;
+    padding-right: 45px; */
     padding-bottom: 5%;
     display: grid;
     /* grid-template-columns: 60% 40%; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     grid-gap: 1rem;
     /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
+}
+.intro div{
+    margin: auto 10%;
 }
 
 .intro-box2 {
@@ -253,9 +262,10 @@ main {
     color: aliceblue;
     font-size: 1.2rem;
     height: 40px;
-    width: 160px;
+    width: 150px;
+    /* padding: 1% 5%; */
     margin-top: 3%;
-    margin-right: 2%;
+    margin-right: 2.5%;
     margin-bottom: 5%;
     /* border-radius: 7px; */
     border: 2px solid aliceblue;
@@ -298,6 +308,13 @@ main {
         display: grid;
         grid-template-columns: 100% 100%;
         width: 300px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .intro button{
+        font-size: 1rem;;
+        height: 36px;
+        width: 140px;
     }
 }
 
