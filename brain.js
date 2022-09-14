@@ -31,8 +31,8 @@ function navResponse()
         nav_menus.style.opacity = "0"
         setTimeout(function(){
             links[pos].classList.add('active-link');
-            nav_menus.style.visibility = "hidden"
         }, 350);
+        nav_menus.style.visibility = "hidden"
         ham_icon.style.position="absolute";
         ham_icon.classList.remove('make-cross');
     }   
