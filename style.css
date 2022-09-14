@@ -62,15 +62,17 @@ main {
 
 .navbar {
     display: flex;
+    /* align-items: center; */
     background: linear-gradient(90deg, rgb(160, 17, 17), rgba(64, 69, 73, 0.726), rgb(0, 0, 0));
     margin: 0;
     height: 100px;
+    /* position: relative; */
 }
 
 .links {
     position: absolute;
     right: 5%;
-    top: 2%;
+    top: 5%;
     font-size: 21px;
     visibility: visible;
     transition: 300ms;
@@ -222,7 +224,7 @@ main {
     /* grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
 }
 .intro div{
-    margin: auto 10%;
+    margin: auto 10% 5% 10%;
 }
 
 .intro-box2 {
@@ -499,6 +501,7 @@ hr {
     padding: 3%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .reviews h3 {
