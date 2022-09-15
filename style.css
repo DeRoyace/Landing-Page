@@ -815,35 +815,50 @@ textarea {
 .hours h1 {
     color: rgba(255, 237, 132, 0.74);
     font-size: 4.5rem;
-    margin: 0 auto 7% auto;
+    margin: 0 auto 5% auto;
 }
 
 .hours table {
     width: 80%;
+    margin: auto;
 }
 
 .hours th {
     color: rgb(66, 4, 35);
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 10%;
-    padding-bottom: 3%;
+    /* width: 10%; */
+    padding: 3%;
 }
 
 .hours td {
     color: rgba(240, 248, 255, 0.795);
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-top: 2%;
 }
 
 .days {
-    padding-left: 20%;
+    padding-left: 12%;
 }
 
 .timings {
-    padding-left: 14%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .hours{
+        padding: 7%;
+    }
+    .hours h1{
+        font-size: 350%;
+    }
+    .hours table{
+        width: 100%;
+    }
+    .days{
+        padding-left: 3%;
+    }
 }
 
 /********************************* End of contact **************************************************/
